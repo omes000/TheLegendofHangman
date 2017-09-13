@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Legend of Hangman</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Orbitron" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/additional_styling.css">
+	</head>
+	<body>
+		<div class ="container text-center">
+			<div class = "row page-header">
+				<div class = "col-lg-3 col-md-3"></div>
+
+				<div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class = "col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<img src = "assets/images/triforce2.png" class = "img-responsive center-block" id= "img-title">
+					</div>
+
+					<div class = "col-lg-9 col-md-9 col-sm-12 col-xs-12 styling">
+						<div class="row">
+							<div class ="col-lg-12"><span class="page-title" id ="test">THE LEGEND OF</span></div>
+						</div>
+						<div class ="row">
+							<div class ="col-lg-12"><span class="page-title"><span id="theH">H</span>ANGMAN</span></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-3 col-md-3"></div>
+			</div>
+		</div>
+
+		<div class = "container text-center" id = "main">
+			<div class = "row">
+				<div class ="col-lg-5">
+					<div id="life"></div>
+				</div>
+			</div>
+			<br><br><br>
+			<div class = "row">
+				<div id="letters" class = "col-lg-12"></div>
+			</div>
+			<br>
+
+			<div class = "row">
+				<div class = "col-lg-12" id = "wrong-text">
+					<span>Incorrect Guesses: </span> <span id="wrong"></span>
+				</div>
+			</div>
+			<br>
+			<div class = "row">
+				<div id="navi" class = "col-lg-3"></div>
+				<div id ="hint" class ="col-lg-6"></div>
+				<div class ="col-lg-3"></div>
+			</div>
+			<div class = "row">
+				<div id="message" class ="col-lg-12"></div>
+			</div>
+			<div class = "row">
+				<div id="item" class = "col-lg-12">
+					
+				</div>
+			</div>
+			<div id ="xlife"></div>
+		</div>
+
+	<script src = "assets/js/triforce.js" type ="text/javascript">
+		//need to add lose conditions. can be based on combo of length of answer and repeats. should have minimum value. 
+		//need to create array or database of answers
+		
+
+
+
+
+		//creates array from the letters
+		//console.log(Array.from(ans.answer));
+
+
+
+	</script>
+
+	<!--<p>Need to check for duplicate letters. </p>
+	<p>Need to remove letters once they are guessed. Can maybe store the answers?</p>
+	<p><a href="https://medium.freecodecamp.org/creating-a-bare-bones-quote-generator-with-javascript-and-html-for-absolute-beginners-5264e1725f08" target = "_blank">How to pick random elements of an array</a></p>
+	<p><a href="https://stackoverflow.com/questions/37077617/javascript-store-multiple-objects-in-array-and-access-their-properties-via" target= "_blank">How to create multiple objects in an array</a></p>-->
+
+	</body>
+</html>
